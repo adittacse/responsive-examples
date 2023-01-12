@@ -4,7 +4,7 @@ img {
 }
 
 .row {
-    height: 400px;
+    /*height: 400px;*/
     margin-bottom: 5px;
 }
 
@@ -37,3 +37,18 @@ img {
     gap: 5px;
 }
 
+@media screen and (max-width: 576px) {
+    .second-row, .third-row {
+        flex-direction: column;
+    }
+
+    .third-row-second-container {
+        grid-template-columns: repeat(1, 1fr);
+    }
+}
+
+@media screen and (min-width: 577px) {
+    .row {
+        height: 400px;
+    }
+}
